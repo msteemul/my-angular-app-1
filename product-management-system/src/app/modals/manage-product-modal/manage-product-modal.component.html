@@ -1,1 +1,44 @@
-<p>manage-product-modal works!</p>
+<div class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-heading">
+            <h1>Manage Product</h1>
+            <span class="close-button" (click)="cancel()">&times;</span>
+      
+        </div>
+        
+            <form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)">
+                <div class="modal-body">
+                <div class="form-item">
+                    <label >
+                        Title:
+                    </label>
+                        <input matInput type="text" name="title" [(ngModel)]="itemData.title" required>
+                </div>
+                <div class="form-item">
+                    <label >
+                        Price:
+                    </label>
+                    <input matInput type="number" name="price" [(ngModel)]="itemData.price" required>
+                </div>
+                <div class="form-item">
+                    <label >
+                        Description:
+                    </label>
+                    <textarea matInput name="description" [(ngModel)]="itemData.description" required></textarea>
+                </div>
+                <!-- Other fields can be added based on your JSON structure -->
+                <div class="footer">
+                    <button mat-raised-button color="primary" type="submit">Save</button>
+                <button mat-raised-button color="warn" type="button" (click)="cancel()">Cancel</button>
+                </div>
+                
+                
+            </div>
+              </form>
+        
+      
+  
+      <!-- Modal content -->
+      
+    </div>
+  </div>
