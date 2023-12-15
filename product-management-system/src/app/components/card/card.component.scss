@@ -1,5 +1,7 @@
+
+$dark-gray: #333333;
 .card{
-    border: 1px solid red;
+    border: 1px solid $dark-gray;
     border-radius: 10px;
     width: 260px;
     padding: 5px;
