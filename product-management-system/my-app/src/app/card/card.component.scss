@@ -1,0 +1,32 @@
+.card{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 260px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    .card-background{
+        height: 200px;
+        width: 250px;
+    }
+    .truncate-title{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .truncate-description{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 250px;
+    }
+    .add-to-card{
+        background: blue;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+}
